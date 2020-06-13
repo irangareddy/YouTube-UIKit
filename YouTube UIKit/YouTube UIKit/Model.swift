@@ -8,15 +8,23 @@
 
 import Foundation
 
+protocol ModelDelegate {
+    func videosFetched(_ videos: [Video])
+}
+
+
+
 class Model {
+    
+    var delegate: ModelDelegate?
 
     func getVideos() {
             
         //    Create the URL Object
             
-            let url = URL(string: Contants.API_URL)
+            let url = URL(string: Constants.API_URL)
             
-        guard url != nil else {
+            guard url != nil else {
                 return
             }
             
@@ -30,11 +38,32 @@ class Model {
             
             let dataTask = session.dataTask(with: url!) { (data, response, error) in
                 
-                if error != nil || data != nil {
-                    return print("✅ Got Data")
+                if error != nil || data == nil {
+                    return 
                 }
                 
                 // Parse the data into Video Objects
+                do {
+                    
+                    let decoder = JSONDecoder()
+                    decoder.dateDecodingStrategy = .iso8601
+                    
+                    let response = try decoder.decode(Response.self, from: data!)
+                    
+                    if response.items != nil {
+                        
+                        DispatchQueue.main.async {
+                            self.delegate?.videosFetched(response.items!)
+                        }
+                        
+                    }
+                    
+                    
+                    
+                } catch {
+                    
+                }
+                
                 
                 
 
