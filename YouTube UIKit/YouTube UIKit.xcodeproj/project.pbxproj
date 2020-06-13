@@ -13,6 +13,9 @@
 		1D75707A2494DC0D0071B988 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7570782494DC0D0071B988 /* Main.storyboard */; };
 		1D75707C2494DC0D0071B988 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D75707B2494DC0D0071B988 /* Assets.xcassets */; };
 		1D75707F2494DC0D0071B988 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D75707D2494DC0D0071B988 /* LaunchScreen.storyboard */; };
+		1DE2823B2494E91A006CCC42 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2823A2494E91A006CCC42 /* Constants.swift */; };
+		1DE2823D2494EADA006CCC42 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2823C2494EADA006CCC42 /* Video.swift */; };
+		1DE2823F2494EB42006CCC42 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2823E2494EB42006CCC42 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		1D75707B2494DC0D0071B988 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D75707E2494DC0D0071B988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D7570802494DC0D0071B988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DE2823A2494E91A006CCC42 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1DE2823C2494EADA006CCC42 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		1DE2823E2494EB42006CCC42 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				1D7570722494DC0D0071B988 /* AppDelegate.swift */,
+				1DE2823A2494E91A006CCC42 /* Constants.swift */,
+				1DE2823C2494EADA006CCC42 /* Video.swift */,
+				1DE2823E2494EB42006CCC42 /* Model.swift */,
 				1D7570742494DC0D0071B988 /* SceneDelegate.swift */,
 				1D7570762494DC0D0071B988 /* ViewController.swift */,
 				1D7570782494DC0D0071B988 /* Main.storyboard */,
@@ -141,6 +150,9 @@
 				1D7570772494DC0D0071B988 /* ViewController.swift in Sources */,
 				1D7570732494DC0D0071B988 /* AppDelegate.swift in Sources */,
 				1D7570752494DC0D0071B988 /* SceneDelegate.swift in Sources */,
+				1DE2823F2494EB42006CCC42 /* Model.swift in Sources */,
+				1DE2823B2494E91A006CCC42 /* Constants.swift in Sources */,
+				1DE2823D2494EADA006CCC42 /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
